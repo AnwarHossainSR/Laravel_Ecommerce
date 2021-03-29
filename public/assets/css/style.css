@@ -71,6 +71,15 @@ button:hover, button:focus, button:visited, button:active{
 .mercado-panel a{
     color: #666666;
 }
+
+
+.text-red-600{
+    color: red;
+}
+
+
+
+
 /*Font faticon*/
 @font-face {
     font-family: "Flaticon";
