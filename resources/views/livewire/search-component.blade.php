@@ -55,6 +55,7 @@
 
                 </div><!--end wrap shop control-->
 
+                @if($products->count() >0)
                 <div class="row">
 
                     <ul class="product-list grid-products equal-container">
@@ -77,15 +78,12 @@
                     </ul>
 
                 </div>
+                @else
+                    <p class="alert text-center alert-info" style="margin-top: 50px;">No product available</p>
+                @endif
 
                 <div class="wrap-pagination-info">
                     {{ $products->links() }}
-                    {{-- <ul class="page-numbers">
-                        <li><span class="page-number-item current" >1</span></li>
-                        <li><a class="page-number-item" href="#" >2</a></li>
-                        <li><a class="page-number-item" href="#" >3</a></li>
-                        <li><a class="page-number-item next-link" href="#" >Next</a></li>
-                    </ul> --}}
                     <p class="result-count">Showing {{ $products->count() }} of {{ $productsAll->count() }} result</p>
                 </div>
             </div><!--end main products area-->
